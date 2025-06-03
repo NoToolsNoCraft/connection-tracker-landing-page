@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="google-site-verification" content="zDYE9CKvXIbXZNd02uOO3KK_di9JhmjQpIVHrtXzOLI" />
   
-  <meta name="description" content="Track and organize your LinkedIn connections with ease. This extension helps you remember who you've connected with, when, and why – so you can follow up strategically." />
+  <!-- Updated SEO copy -->
+  <meta name="description" content="Take quick, private notes on LinkedIn profiles right inside your browser. Remember why a contact matters — from first outreach ideas to follow‑up details — without spreadsheets or CRMs." />
 
-  <meta property="og:title" content="LinkedIn Connection Tracker Extension" />
-  <meta property="og:description" content="Organize your LinkedIn connections and keep track of who you've added and when. Perfect for job seekers, recruiters, and networkers." />
-  <meta property="og:image" content="https://yourdomain.com/connection-tracker-preview.webp" />
-  <meta property="og:url" content="https://yourdomain.com/connection-tracker" />
+  <!-- Updated Open Graph data -->
+  <meta property="og:title" content="Connection Tracker Extension" />
+  <meta property="og:description" content="Stop forgetting who’s who on LinkedIn. Jot down notes on any profile and keep them stored locally, ready whenever you revisit." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/NoToolsNoCraft/connection-tracker-landing-page/refs/heads/main/connection%20tracker%20thumbnail.webp" />
+  <meta property="og:url" content="https://notoolsnocraft.github.io/connection-tracker-landing-page/" />
   <meta property="og:type" content="website" />
 
   <title>Connection Tracker</title>
   <style>
     body { font-family: 'Times New Roman', Times, serif sans-serif; margin: 0; background: #ffffff; }
-    .navbar { background-color: #009776; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .navbar h2 { margin: 0; font-size: 3rem; text-align: center; }
+    .navbar { background-color: #009776; color: white; padding: 1rem 2rem; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; text-align:center; }
+    .navbar h2 { margin: 0; font-size: 3rem; line-height:1.2; }
 
     .intro { display: flex; flex-wrap: wrap; padding: 40px 20px; background-color: #ffffff; max-width: 80%; margin: 0 auto; align-items: center; gap: 60px; }
     .intro-text { flex: 1; min-width: 280px; display: flex; flex-direction: column; align-items: center; }
@@ -27,9 +29,7 @@
     .intro-image img { max-width: 100%; height: auto; border-radius: 8px; }
     .start-button { display: inline-block; background-color: #0077cc; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; margin-top: 20px; text-align: center; }
     .start-button:hover { background: #005fa3; }
-    li { 
-        font-size: 1.3rem;
-    }
+    li { font-size: 1.3rem; margin-bottom: .5rem; }
 
     .intro.double-text { justify-content: space-between; align-items: flex-start; }
     footer { background-color: #222; color: #ccc; text-align: center; padding: 1rem 2rem; font-size: 1rem; }
@@ -39,67 +39,69 @@
 </head>
 <body>
 
-  <nav class="navbar" style="justify-content: center;">
-    <h2>🔗 Connection<br>📈 Tracker</h2>
+  <nav class="navbar">
+    <h2>🔗 Connection<br>🗒️ Tracker</h2>
   </nav>
 
+  <!-- Hero / What‑is section -->
   <section class="intro">
     <div class="intro-text">
-      <h2>📌 What is Connection Tracker?</h2>
+      <h2>📌 What is Connection Tracker?</h2>
       <p>
-        A simple and effective Chrome Extension to help you track your LinkedIn connections. No more forgetting who you added, when you connected, or why. Great for job seekers, recruiters, and networkers who want to maintain meaningful relationships.
+        Connection Tracker is a lightweight Chrome extension that lets you attach your own private notes to any LinkedIn profile. Instead of trying to remember where you met someone—or why you meant to reach out—simply write a quick note and keep everything in one place. Perfect for job seekers, recruiters, founders, and networkers who want context at their fingertips.
       </p>
-      <a href="https://chromewebstore.google.com/detail/YOUR_EXTENSION_ID" class="start-button">Add to Chrome for Free</a>
+      <a href="https://chromewebstore.google.com/detail/connection-tracker/nnehmblakhaojdipfibbampebmlfoeke?authuser=1&hl=en" class="start-button">Add to Chrome — Free</a>
     </div>
     <div class="intro-image">
-      <img src="connection tracker for linkedin.webp" alt="LinkedIn Connection Tracker Screenshot" />
+      <img src="connection-notes-screenshot.webp" alt="Screenshot of the Connection Notes extension" />
     </div>
   </section>
 
-  <section class="intro double-text">
+  <!-- How it works section -->
+  <section class="intro">
     <div class="intro-text">
-      <h2>🗂️ Keep Notes on Each Connection</h2>
-      <p>
-        Add context to every connection: when you met, what you discussed, where they work, or what opportunity you talked about. This way, your future follow-ups are always relevant.
-      </p>
-    </div>
-    <div class="intro-text">
-      <h2>⏰ Timeline of Your Activity</h2>
-      <p>
-        Easily view your connection history. Filter by date, tags, or companies. Stay organized as your network grows and avoid duplicating outreach.
-      </p>
-    </div>
-  </section>
-
-  <section class="intro double-text">
-  <div class="intro-text">
-    <h2>🔐 Your Data, Your Control</h2>
-    <p>
-      All your notes and records are saved locally in your browser using <strong>local storage</strong>. This means the data stays on your device — nothing is sent to any server or shared externally.
-    </p>
-    <p>
-      Local storage is persistent: your data will remain saved even if you close the tab, refresh the page, or restart your browser. However, it’s important to know that your data may be deleted if:
-      <ul>
-        <li>You clear your browser’s cache or site data</li>
-        <li>You use private/incognito mode (which may disable or isolate storage)</li>
-        <li>You switch devices or browsers</li>
-        <li>Your browser decides to evict data (rare, usually only if storage is full)</li>
+      <h2>⚙️ How It Works</h2>
+      <ul style="text-align:left;padding-left:1.2rem;">
+        <li><strong>Browse to any LinkedIn profile.</strong></li>
+        <li>The extension instantly grabs the person’s <em>name</em> and <em>profile URL</em> for you.</li>
+        <li><strong>Type your note</strong> — next steps, where you met, reminders, anything.</li>
+        <li>Hit <em>Save</em>. Your note lives safely in your browser’s local storage, ready whenever you open that profile again.</li>
       </ul>
-      
-    </p>
-  </div>
-  <div class="intro-text">
-    <h2>🧠 Remember Every Lead</h2>
-    <p>
-      Whether you're in a job hunt, sourcing candidates, or managing a professional network, Connection Tracker helps you stay sharp and efficient. With your information stored locally, you can track every interaction confidently, knowing your data stays private.
-    </p>
-  </div>
-</section>
+    </div>
+    <div class="intro-text">
+      <h2>🧠 Why Take Notes?</h2>
+      <p>
+        • Follow up with precision and warmth.<br>
+        • Never blank on names or shared interests.<br>
+        • Keep outreach organized without complicated CRMs.<br>
+        • All data stays on <em>your</em> device — no accounts, no cloud.
+      </p>
+    </div>
+  </section>
+
+  <!-- Privacy / Data control section -->
+  <section class="intro double-text">
+    <div class="intro-text">
+      <h2>🔐 Your Data, Your Control</h2>
+      <p>
+        Everything you write is stored locally in your browser’s <strong>local storage</strong>. Nothing is sent to external servers, and nobody can see your notes but you.
+      </p>
+      <p>
+        Keep in mind local storage is tied to your current browser and device. If you clear site data, use incognito mode, or switch devices, your notes won’t come along automatically.
+      </p>
+    </div>
+    <div class="intro-text">
+      <h2>🚀 Light‑weight & Distraction‑free</h2>
+      <p>
+        Connection Tracker adds under 50 KB to your browser and stays silent until you need it. No pop‑ups, no tracking, just the context you want—exactly when you want it.
+      </p>
+    </div>
+  </section>
 
   <footer>
     <p><a href="privacy.html" target="_blank">Privacy Policy</a></p>
-    <p>The app was created with ❤️ by: <a href="https://www.linkedin.com/in/petar-skrbic/" target="_blank">Petar Škrbić</a></p>
-    &copy; 2025 Connection Tracker App. All rights reserved.
+    <p>Made with ❤️ by <a href="https://www.linkedin.com/in/petar-skrbic/" target="_blank">Petar Škrbić</a></p>
+    &copy; 2025 Connection Tracker. All rights reserved.
   </footer>
 
 </body>
